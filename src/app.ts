@@ -1,4 +1,12 @@
+import { Server } from './presentation/server';
 
-export const name: string = 'Juan !!';
+// Función anónima autoinvicada:
+( async() => {
 
-console.log( name );
+    main();
+
+})();
+
+function main() {
+    Server.start();
+}
