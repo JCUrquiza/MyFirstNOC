@@ -16,15 +16,19 @@ export class Server {
         console.log('Server started...');
 
         const emailService = new EmailService();
-        emailService.sendEmail({
-            to: 'gurquiza8@gmail.com',
-            subject: 'Logs de sistema',
-            htmlBody: `
-                <h3>Logs de sistema</h3>
-                <p>Correo de prueba</p>
-                <p>Ver logs adjuntos</p>
-            `
-        });
+        emailService.sendEmailWithFileSystemLogs(
+            ['gurquiza8@gmail.com', 'gurquiza8@gmail.com']
+        );
+
+        // {
+        //     to: 'gurquiza8@gmail.com',
+        //     subject: 'Logs de sistema',
+        //     htmlBody: `
+        //         <h3>Logs de sistema</h3>
+        //         <p>Correo de prueba</p>
+        //         <p>Ver logs adjuntos</p>
+        //     `
+        // }
 
         // CronService.createJob(
         //     '*/3 * * * * *',
