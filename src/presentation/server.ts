@@ -13,18 +13,18 @@ export class Server {
 
         console.log('Server started...');
 
-        CronService.createJob(
-            '*/3 * * * * *',
-            () => {
-                const url = 'https://google.com';
-                // new CheckService().execute('https://google.com');
-                new CheckService(
-                    fileSystemLogRepository,
-                    () => console.log(`${ url } is ok`),
-                    ( error ) => console.log( error )
-                ).execute(url);
-            }
-        );
+        // CronService.createJob(
+        //     '*/3 * * * * *',
+        //     () => {
+        //         const url = 'https://google.com';
+        //         // new CheckService().execute('https://google.com');
+        //         new CheckService(
+        //             fileSystemLogRepository,
+        //             () => console.log(`${ url } is ok`),
+        //             ( error ) => console.log( error )
+        //         ).execute(url);
+        //     }
+        // );
         
     }
 
