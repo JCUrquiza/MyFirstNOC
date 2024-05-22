@@ -24,8 +24,8 @@ async function main() {
     // });
     // await newLog.save();
 
-    const logs = await LogModel.find();
-    console.log(logs);
+    // const logs = await LogModel.find();
+    // console.log(logs);
 
     // Server.start();
 }
