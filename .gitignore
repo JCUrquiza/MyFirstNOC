@@ -1,16 +1,10 @@
 
-*.log
+node_modules/
+dist/
 
 .DS_Store
 
 logs/
-node_modules/
-dist/
-outputs/
-
-custom-outputs/
-test-destination/
-coverage/
-
-
 .env
+
+mongo/
